@@ -25,8 +25,45 @@ Software Development and Design
     1.8.f Merge and handling conflicts
     1.8.g diff
 
-
+---------------------------------------------------------------------------------------------------------------------------
 - Compare data formats (XML, JSON, and YAML)
-XML uses tags
-JSON doensnt care about whitespace or indents
-YAML cares about indents
+
+Human readable, computer readable.
+
+- Computers need structure.
+- annotated for humans.
+- open and extensible.
+- self describing.
+- platform agnostic / lifespan.
+
+- plain text ascii formats
+
+XML -   uses tags,  legacy support, has been around for a while. Format for SOAP.  Very verbose (con, large file sizes)
+        prolog is optional,   root tag
+        tag can contain attributes. <tag id="2"> (single or double quotes)
+        Can contain other tags.
+        Elements can contain sub-elements in its values, empty elements <empty/> or <empty id='2'/> 
+        Esc values inside qoutes &apos; &quot;
+        DOM, document object model. (XML tools in VScode) , tree view structure. Makes the largers files easier to read.
+
+
+JSON -  doensnt care about whitespace, indents or new line. popular, lightweight, native to JS. 
+        defacto standard, serializing data into it.
+        key:value pairs.
+        [] array, needs commar seperation, doesnt need a key. indexed 0 1 2 etc.
+        {} objects, inside object needs k:v, needs a commar seperation, can nest
+        key needs "" double quotes. Values dont.
+        Keys = number, "str" or boolen(lower case).
+
+
+
+YAML -  cares about indents.  Highly legable, compact/succinct, ideal for configurations.
+        --- denotes a YAML file, end ... can have multiple documents in one file.
+        more human readable.
+        indentation matters, needs to be consistant in a collection.
+        K:V pairs
+        # for comments.
+        Values = number, float (decimal point), strings dont need quotes litiral but they can have them if you want new line etc.
+        boolen = lower case or first letter upper case, true or True.
+
+---------------------------------------------------------------------------------------------------------------------------
