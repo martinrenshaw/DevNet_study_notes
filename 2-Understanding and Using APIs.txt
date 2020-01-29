@@ -1,1 +1,13 @@
+20%
 
+Understanding and Using APIs
+
+-  Construct a REST API request to accomplish a task given API documentation
+-  Describe common usage patterns related to webhooks
+-  Identify the constraints when consuming APIs
+-  Explain common HTTP response codes associated with REST APIs
+-  Troubleshoot a problem given the HTTP response code, request and API documentation
+-  Identify the parts of an HTTP response (response code, headers, body)
+-  Utilize common API authentication mechanisms: basic, custom token, and API keys
+-  Compare common API styles (REST, RPC, synchronous, and asynchronous)
+-  Construct a Python script that calls a REST API using the requests library
