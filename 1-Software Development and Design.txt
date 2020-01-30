@@ -44,26 +44,26 @@ XML -   uses tags,  legacy support, has been around for a while. Format for SOAP
         Can contain other tags.
         Elements can contain sub-elements in its values, empty elements <empty/> or <empty id='2'/> 
         Esc values inside qoutes &apos; &quot;
-        DOM, document object model. (XML tools in VScode) , tree view structure. Makes the largers files easier to read.
+        DOM, document object model. (XML tools in VScode) , tree view structure. Makes the larger files easier to read.
 
 
 JSON -  doensnt care about whitespace, indents or new line. popular, lightweight, native to JS. 
         defacto standard, serializing data into it.
         key:value pairs.
         [] array, needs commar seperation, doesnt need a key. indexed 0 1 2 etc.
-        {} objects, inside object needs k:v, needs a commar seperation, can nest
+        {} objects, inside object needs k:v, needs a commar separation, can nest
         key needs "" double quotes. Values dont.
-        Keys = number, "str" or boolen(lower case).
+        Keys = number, "str" or boolean(lower case).
 
 
 
-YAML -  cares about indents.  Highly legable, compact/succinct, ideal for configurations.
+YAML -  cares about indents.  Highly legible, compact/succinct, ideal for configurations.
         --- denotes a YAML file, end ... can have multiple documents in one file.
         more human readable.
-        indentation matters, needs to be consistant in a collection.
+        indentation matters, needs to be consistent in a collection.
         K:V pairs
         # for comments.
-        Values = number, float (decimal point), strings dont need quotes litiral but they can have them if you want new line etc.
-        boolen = lower case or first letter upper case, true or True.
+        Values = number, float (decimal point), strings dont need quotes litral but they can have them if you want new line etc.
+        boolean = lower case or first letter upper case, true or True.
 
 ---------------------------------------------------------------------------------------------------------------------------
