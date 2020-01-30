@@ -159,8 +159,18 @@ MVC -   V - presents data
         C - handles logic
 
 
+---------------------------------------------------------------------------------------------------------------------------
+1.7 - Explain the advantages of version control
+https://www.cbtnuggets.com/learn/it-training/use-git-version-control
 
+VCS - version control System
+resolve conflicts.
+git is a distributed VCS.
+teams foundation servers is a centralised vcs, a file is checked out and then checked backin.
 
+git init to create a repo.  look for .git folder.
+git add - to stage files
+git commit - to commit them to the repo.(frequent and small)
 
 
 
