@@ -112,3 +112,55 @@ TDD  - writes test first.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+1.5 - Explain the benefits of organizing code into methods / functions, classes, and modules
+https://www.cbtnuggets.com/learn/it-training/basic-programming-control-flow
+
+D.R.Y - dont repeat yourself.
+KISS - keep it simple
+
+Control Flow, imperative / Procedural programming.
+Conditions - if-then-else 
+loops - while, for.
+exception handling, try
+goto , return. - not used anymore.
+
+Conditions - allow for differnet branches of code.  exclusive code paths.
+    If its hard to read then its poor code,  use swich statements, functions and OOPrograming.
+
+Loops and iteration. can be nested, as can Conditions.
+    the inifinite loop, - dont modify the loop condition in the loop.
+                        - write unit tests for your code.
+                        - dont have a loop condition that defaults to inifinite.
+
+Functions - def funcname(), difine once then call it many times.
+
+CLASS = state
+Methods descibe the behaviou of the class/object in oop.
+
+OOP =   architectual style, supported by many prog languages.
+        use of objects, 
+
+class - state , Behavior | top part - bottom part 
+
+    CLASS = blueprint
+    OBJECTS = house
+    
+---------------------------------------------------------------------------------------------------------------------------
+1.6 - Identify the advantages of common design patterns (MVC and Observer)
+
+https://www.cbtnuggets.com/learn/it-training/design-patterns
+
+Singleton - getInstance() is used to use the single instance. Create a class thats only ever instatiated once.
+
+Observer - subject, notify method, dependent.
+
+MVC -   V - presents data
+        M - stores data
+        C - handles logic
+
+
+
+
+
+
+
