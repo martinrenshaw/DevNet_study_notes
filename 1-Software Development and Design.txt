@@ -1,21 +1,16 @@
 15%
 
+https://www.cbtnuggets.com/certification-playlist/Cisco/devnet-associate
+
 Software Development and Design
 
 - Compare data formats (XML, JSON, and YAML)
-
 - Describe parsing of common data format (XML, JSON, and YAML) to Python data structures
-
 - Describe the concepts of test-driven development
-
 - Compare software development methods (agile, lean, and waterfall)
-
 - Explain the benefits of organizing code into methods / functions, classes, and modules
-
 - Identify the advantages of common design patterns (MVC and Observer)
-
 - Explain the advantages of version control
-
 - Utilize common version control operations with Git
     1.8.a Clone
     1.8.b Add/remove
@@ -26,7 +21,7 @@ Software Development and Design
     1.8.g diff
 
 ---------------------------------------------------------------------------------------------------------------------------
-- Compare data formats (XML, JSON, and YAML)
+1.1 - Compare data formats (XML, JSON, and YAML)
 
 Human readable, computer readable.
 
@@ -67,3 +62,53 @@ YAML -  cares about indents.  Highly legible, compact/succinct, ideal for config
         boolean = lower case or first letter upper case, true or True.
 
 ---------------------------------------------------------------------------------------------------------------------------
+1.2 - - Describe parsing of common data format (XML, JSON, and YAML) to Python data structures
+
+serializing , into and out of data format.
+xml to python - elementree - quicksimple tasks
+                lxml
+                xmltodict , .parse()  xml to str
+
+JSON,  import json, similar naming. array = list[] , object = dict{}
+json.loads() = load strings
+json.load() = load json object
+json.dump()
+
+YAML - pyyaml needs installing. pip install
+
+print(doc['people'][1]['LastName'])
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+1.3 - Describe the concepts of test-driven development
+
+https://www.cbtnuggets.com/learn/it-training/unit-tests-test-driven-development-tdd
+
+testing code, unit code, done first, 
+
+Unit testing    - test unit of code, granular, modular, automated, frequent.
+                - unit, code to be tested, 
+                  test-case, the code doing the test.  Python module unittest.
+                  test-runner, 
+
+Integration testing - 
+System testing - 
+Acceptance testing / UAT - 
+
+Python unittest module.
+    unittest.TestCase
+    define test by creating methods begin with 'test'
+
+Postman - unittesting, 'chai assertion library' in post response scripts
+javascripts, pm.test , Behavior Driven Development
+
+TDD  - writes test first. 
+
+---------------------------------------------------------------------------------------------------------------------------
+1.4 - Compare software development methods (agile, lean, and waterfall)
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
