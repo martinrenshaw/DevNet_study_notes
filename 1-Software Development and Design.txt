@@ -172,5 +172,20 @@ git init to create a repo.  look for .git folder.
 git add - to stage files
 git commit - to commit them to the repo.(frequent and small)
 
+revision history - git log or git log --oneline -n 3
 
+git checkout [hashval]
+    - changes you workdir to match a specific commit. detached head
+    - git checkout master.
 
+git reset, reset the HEAD - id or tildy ** only do on local repo
+
+git commit --amend ** only do on local repo
+
+git revert ** plan to use where possible, keeps history. to go back past one commit do it one by one.
+
+.gitignore to list files that dont want to be tracked.
+
+git rm ** will delete from repo and file sys.
+
+---------------------------------------------------------------------------------------------------------------------------
