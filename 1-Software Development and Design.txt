@@ -108,6 +108,13 @@ TDD  - writes test first.
 ---------------------------------------------------------------------------------------------------------------------------
 1.4 - Compare software development methods (agile, lean, and waterfall)
 
+WATERFALL - sequential and linear; based on a clear scope from the start and tackling each step in order. All starts with requirements.
+
+AGILE - projects where the end-goal may not be clearly defined from the start and can evolve as it develops. 
+        when speedy production is more important than the quality of the product.
+        When the product is meant for an industry with quickly changing standards.
+
+LEAN - Minimal Viable Product (MVP) 
 
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -125,7 +132,7 @@ exception handling, try
 goto , return. - not used anymore.
 
 Conditions - allow for differnet branches of code.  exclusive code paths.
-    If its hard to read then its poor code,  use swich statements, functions and OOPrograming.
+    If its hard to read then its poor code,  use switch statements, functions and OOPrograming.
 
 Loops and iteration. can be nested, as can Conditions.
     the inifinite loop, - dont modify the loop condition in the loop.
