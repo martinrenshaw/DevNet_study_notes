@@ -168,11 +168,11 @@ resolve conflicts.
 git is a distributed VCS.
 teams foundation servers is a centralised vcs, a file is checked out and then checked backin.
 
-git init to create a repo.  look for .git folder.
+git init - to create a repo.  look for .git folder.
 git add - to stage files
-git commit - to commit them to the repo.(frequent and small)
+git commit - to commit them to the repo.(frequent and small) local
 
-revision history - git log or git log --oneline -n 3
+git log or git log --oneline -n 3 - revision history 
 
 git checkout [hashval]
     - changes you workdir to match a specific commit. detached head
@@ -187,5 +187,23 @@ git revert ** plan to use where possible, keeps history. to go back past one com
 .gitignore to list files that dont want to be tracked.
 
 git rm ** will delete from repo and file sys.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Nothing about the central repo is special. its just a understanding .
+git clone - ssh , ftp or git  (repo to repo) Origin
+git push - push the commits up the central repo. Git push will push all commits on the current branch to a remote repo.
+git pull - pull changes from central to local.
+git fetch - 
+git remote - 
+
+git merge - fastforward - moves master to new tip.
+git merge - 3-way - 
+TARGET - changes pulled from and RECEIVING - changes pulled into. 
+switch to master (RECEIVING branch) , git merge newBranch (pull changes in)
+CONFLICT - choose what you want the file to look like then  git add and git commit.
+
+git branch newBranch - - create new branch.
+git checkout newBranch - switch to newBranch.
 
 ---------------------------------------------------------------------------------------------------------------------------
