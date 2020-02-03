@@ -75,3 +75,30 @@ HEADERS - k:v pairs, should get a response on the response.
 not required and not standardised, api can have there own api headers.
 
 ------------------------------------------------------------------------------------------------------------
+
+2.7 -  Utilize common API authentication mechanisms: basic, custom token, and API keys
+
+https://www.cbtnuggets.com/learn/it-training/authentication-http-rest
+
+Base64 Encoding vs Encryption.
+
+encoding is not encryption.
+64 charaters.
+url safe.
+
+Basic auth - rfc7617 \
+in the http req headers
+Basic sdbfsunfosnfoisnf==
+always use https as it will be visable in http.
+
+API key - single token stored in applications.
+trasmitted in a reuest header. almost the same as Basic auth.
+
+authentication with 
+
+Token authentication - statless auth \
+most popular, JWTs  = JSON + Crypto sig. The Base64 encoded.
+linked with session id
+JWT means the api is stateless.
+speed - doesnt need to do a DB lookup.
+Scalability - user 
