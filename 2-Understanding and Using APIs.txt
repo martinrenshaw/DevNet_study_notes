@@ -22,7 +22,20 @@ https://www.cbtnuggets.com/certification-playlist/Cisco/devnet-associate
 https://www.cbtnuggets.com/learn/it-training/restful-api-fundamentals
 
 APi meant for machine to machine comms.
-in vscode press [Ctrl + Alt + r] on a url to make a request call
+in vscode press [Cimport requests
+
+url = "https://api.meraki.com/api/v0/organizations"
+
+payload = ""
+headers = {
+    'X-Cisco-Meraki-API-Key': "",
+    'cache-control': "no-cache",
+    'Postman-Token': "a5b4a85e-add2-4502-ae76-2d81d2c5e47e"
+    }
+
+response = requests.request("GET", url, data=payload, headers=headers)
+
+print(response.text)trl + Alt + r] on a url to make a request call
 Mainly use JSON data.
 
 API constraints (restful)
@@ -54,7 +67,20 @@ R/R
 Start line -- verb GET/POST/ etc
 headers
 ----------- blank line
-bode payload
+bode payloadimport requests
+
+url = "https://api.meraki.com/api/v0/organizations"
+
+payload = ""
+headers = {
+    'X-Cisco-Meraki-API-Key': "",
+    'cache-control': "no-cache",
+    'Postman-Token': "a5b4a85e-add2-4502-ae76-2d81d2c5e47e"
+    }
+
+response = requests.request("GET", url, data=payload, headers=headers)
+
+print(response.text)
 
 In POSTMAN console open log, bottom left.
 
@@ -68,10 +94,8 @@ RESPONSE CODES - start line protocal xxx digit.
 5xx - server errors
 
 404 - page not found.
-400 - bad request
-
-
-HEADERS - k:v pairs, should get a response on the response.
+400 - bad request-  Construct a Python script that calls a REST API using the requests library
+ should get a response on the response.
 not required and not standardised, api can have there own api headers.
 
 ------------------------------------------------------------------------------------------------------------
@@ -101,3 +125,21 @@ speed - doesnt need to do a DB lookup.
 Scalability - user carries the token.
 
 ------------------------------------------------------------------------------------------------------------
+
+2.9 -  Construct a Python script that calls a REST API using the requests library
+
+
+import requests
+
+url = "https://api.meraki.com/api/v0/organizations"
+
+payload = ""
+headers = {
+    'X-Cisco-Meraki-API-Key': "",
+    'cache-control': "no-cache",
+    'Postman-Token': "a5b4a85e-add2-4502-ae76-2d81d2c5e47e"
+    }
+
+response = requests.request("GET", url, data=payload, headers=headers)
+
+print(response.text)
