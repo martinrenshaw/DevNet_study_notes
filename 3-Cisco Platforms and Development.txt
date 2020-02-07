@@ -8,8 +8,46 @@ Cisco Platforms and Development
   Describe the device level APIs and dynamic interfaces for IOS XE and NX-OS
   Identify the appropriate DevNet resource for a given scenario (Sandbox, Code Exchange,support, forums, Learning Labs, and API documentation)
   Apply concepts of model driven programmability (YANG, RESTCONF, and NETCONF) in a Cisco environment
-  Construct code to perform a specific operation based on a set of requirements and given
-  API reference documentation such as these:
+  Construct code to perform a specific operation based on a set of requirements and given API reference documentation such as these:
     3.9.a Obtain a list of network devices by using Meraki, Cisco DNA Center, ACI, Cisco   SD-WAN, or NSO
     3.9.b Manage spaces, participants, and messages in Webex Teams
     3.9.c Obtain a list of clients / hosts seen on a network using Meraki or Cisco DNA Center
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+    https://www.cbtnuggets.com/certification-playlist/Cisco/devnet-associate
+
+    15%
+
+
+3.1 - Construct a Python script that uses a Cisco SDK given SDK documentation
+
+-------------------------------------------------------------------------------------------------------------------
+
+3.2 - Describe the capabilities of Cisco network management platforms and APIs (Meraki,Cisco DNA Center, ACI, Cisco SD-WAN, and NSO)
+
+Meraki
+Cisco DNA Center
+ACI
+Cisco SD-WAN
+NSO
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
+3.8 - Apply concepts of model driven programmability (YANG, RESTCONF, and NETCONF) in a Cisco environment
+
+google - netconf central
+
+YANGCATAlog.org   -  Maturity 
+                  - Origin
+
+yang explorer , github python2.7 - connect to device and explor YANG to ceate scripts.
