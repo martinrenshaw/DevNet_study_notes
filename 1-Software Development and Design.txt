@@ -63,10 +63,7 @@ YAML -  cares about indents.  Highly legible, compact/succinct, ideal for config
 
 ---------------------------------------------------------------------------------------------------------------------------
 1.2 - - Describe parsing of common data format (XML, JSON, and YAML) to Python data structures
-
-serializing , into and out of data format.
-xml to python - elementree - quicksimple tasks
-                lxml
+from maraki_sdk.meraki_sdk_client import MerakiSdkClient 
                 xmltodict , .parse()  xml to str
 
 JSON,  import json, similar naming. array = list[] , object = dict{}
@@ -214,3 +211,14 @@ git branch newBranch - - create new branch.
 git checkout newBranch - switch to newBranch.
 
 ---------------------------------------------------------------------------------------------------------------------------
+
+VScode
+ctrl shift p
+
+ctr b , to open and shut the exsporer.
+ctrl shift p > toggle mini map
+ctrl shift p > toggle breadcrumbs.
+ctrl shift p > toggle sidebar.
+
+
+settings  ctrl + ,

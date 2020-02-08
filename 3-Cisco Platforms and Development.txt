@@ -25,10 +25,94 @@ Cisco Platforms and Development
 
 -------------------------------------------------------------------------------------------------------------------
 
-3.2 - Describe the capabilities of Cisco network management platforms and APIs (Meraki,Cisco DNA Center, ACI, Cisco SD-WAN, and NSO)
+3.2 - Describe the capabilities of Cisco network management platforms and APIs (Meraki, Cisco DNA Center, ACI, Cisco SD-WAN, and NSO)
 
-Meraki
-Cisco DNA Center
+Meraki  - Cloud networking.
+        - Cloud controller, owned by cisco, MR Wilress, MS Switch, MX Sec Applince, SM Mobility Managment, MC voice comms, MV video camera.
+        - auto register to the cloud to get config.
+        - small to many branch intsall base.
+        - good vpn easy to configure.
+        - single login.
+        - ORG (companies)
+          - NETWORK (sites)
+            - Sec & SD-WAN  - most thigs are under here
+            - Switch 
+        - dashboard api = config
+        - scanning api = where the clients
+        - captive portal api = cofig capt portal
+        - webhooks = push alerts out , POST, JSON
+
+        DASHBOARD API
+        - need an API key
+        - developer.Meraki.com OR developer.cisco.com/Meraki to get to the API docs
+
+        POSTMAN
+        - api key in the X-Cisco-Meraki-API-Key header.
+        - postman test will override to VARS
+        - https://dashboard.meraki.com/api/v0/......
+
+        Python
+        import requests
+
+        url = "https://api.meraki.com/api/v0/organizations"
+Cisco DNA Center4c48493eaa1b73",
+          'cache-control': "no-cache"
+          }
+
+        response = requests.request("GET", url, data=payload, headers=headers)
+
+        print(response.text)
+
+        MERAKISDK
+        - pip install meraki-sdk==1.5.0
+        - from maraki_sdk.meraki_sdk_client import MerakiSdkClient 
+        - need to read the sdk docs to understand what params are needs for functions.
+        - VS code intelisense == ctrl + spaceabar
+        - postman docs are good for showing vlan updates.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cisco DNA Center  - DC and Campus, 
+                  - Controler for campuses, SDN, intent based infratructure.
+                  - Cat 9k only for the intent stuff.
+                  - Platform sits onto of the DNA Centre.
+                    - 1) Platform - API
+                    - 2) Design - 
+                    - 3) Policy 
+                    - 4) Provisioning
+                    - 5) Assurance - monitoring on roids, tshoot and fixes.
+                  
+                  - Northbound  - Intent API
+                  - Southbound  - Multivendor SDK (3rd party SDK)
+                  - EASTbound - events & notifications - webhooks.
+                  - WESTbound - ITSM/IPAM , assurance, powerBi 
+                  ITS all about intergrations, its the middle glue.
+                  
+                  -Sandbox, DevNet https://sandboxdnac.cisco.com/dna/home - devnetuser / Cisco123!
+
+                  - API explorer
+                    - Platform
+                      - know your network
+                      - Site Managment
+                      - operational tools -  path trace !!
+                      - Authentication
+
+                    - basic auth
+
+                    Python
+                    - needs timestamp query string on EPOCH time.
+                    - client health response
+                      - ALL > Wired > Wireless within each you need to iterate over results.
+                    - 1) login with un/pw and store token.
+                    - 2) use reques with headers and params as querystring of "timestamp : ''"
+                    - 3) print all clients
+
+                    DNAcentreSDK
+                    - https://github.com/DataKnox/CodeSamples/tree/master/Python/Networking/DNA
+                    - pip install dnscentersdk
+                    - dnscentresdk.readthedocs.io  - learn the SDK this is highlevel. 
+
+
+
 ACI
 Cisco SD-WAN
 NSO
@@ -51,3 +135,11 @@ YANGCATAlog.org   -  Maturity
                   - Origin
 
 yang explorer , github python2.7 - connect to device and explor YANG to ceate scripts.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Construct code to perform a specific operation based on a set of requirements and given API reference documentation such as these:
+    3.9.a Obtain a list of network devices by using Meraki, Cisco DNA Center, ACI, Cisco   SD-WAN, or NSO
+    3.9.b Manage spaces, participants, and messages in Webex Teams
+    3.9.c Obtain a list of clients / hosts seen on a network using Meraki or Cisco DNA Center
