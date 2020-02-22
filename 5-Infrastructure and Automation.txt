@@ -2,7 +2,6 @@
 Infrastructure and Automation
 Describe the value of model driven programmability for infrastructure automation
 Compare controller-level to device-level management
-
 Describe the use and roles of network simulation and test tools (such as VIRL and pyATS)
 Describe the components and benefits of CI/CD pipeline in infrastructure automation
 Describe principles of infrastructure as code
@@ -15,3 +14,82 @@ Interpret basic YANG models
 Interpret a unified diff
 Describe the principles and benefits of a code review process
 Interpret sequence diagram that includes API calls
+
+
+https://www.cbtnuggets.com/certification-playlist/Cisco/devnet-associate
+
+---------------------------------------------------------------------------------------------------------------------------
+
+5.1 Describe the value of model driven programmability for infrastructure automation
+
+https://www.cbtnuggets.com/learn/it-training/network-programmability-automation-foundations
+
+ - Faster
+ - Standardized configs
+ - Known Outcomes
+ - Granular Monitoring - targeted info at speed, response as fast as request.
+
+ learn all the bits and bobs about automation and programmability
+ document regular workflows.
+
+ Types: [what can you automate]
+- start with Monitoring, RESTCONF, NETCONF with YANG
+- Provisioning - templetes, i.e jinja. Device config file YAML
+- migrations - Cisco to HPE or HPE to Cisco 
+- Config mgmt - device config and config state.  looking for config drift, write policy i.e dont use vLAN1 or always use IPS policy.
+- automate tshooting. pyATS for OSPF , BGP.  possibley self heal.
+
+Evolution of the network API
+- RESTCONF - over TLS - rpc call is done as part of the HTTP VERB!
+- NETCONF - uses ssh over port 830, was setout as SNMP replacement.  XML structured data. uses RPC 
+- gNMI - 
+
+network programmability.
+- specific tasks against specific deivces
+
+network automation.
+- repeatable task against multiple deivces.
+- disired state.
+- ansible , automation and orchastration. works with Python, free. 
+
+
+ RECAP - 
+
+---------------------------------------------------------------------------------------------------------------------------
+5.2 - Compare controller-level to device-level management
+
+
+---------------------------------------------------------------------------------------------------------------------------
+5.3 - Describe the use and roles of network simulation and test tools (such as VIRL and pyATS)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+5.4 - Describe the components and benefits of CI/CD pipeline in infrastructure automation
+
+CI
+- source code controller
+- build automation
+- unit testing
+- branch merging
+- intergration testing
+
+CD
+- central repo 
+- system testing
+- deployment
+- uAT
+
+
+---------------------------------------------------------------------------------------------------------------------------
+5.5 - Describe principles of infrastructure as code
+5.6 - Describe the capabilities of automation tools such as Ansible, Puppet, Chef, and Cisco NSO
+
+https://www.cbtnuggets.com/learn/it-training/install-configure-ansible
+
+IoC
+- 
+---------------------------------------------------------------------------------------------------------------------------
+5.6
+
+
+---------------------------------------------------------------------------------------------------------------------------
