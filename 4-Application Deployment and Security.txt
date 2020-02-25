@@ -16,3 +16,8 @@ Explain how firewall, DNS, load balancers, and reverse proxy in application depl
 Describe top OWASP threats (such as XSS, SQL injections, and CSRF)
 Utilize Bash commands (file management, directory navigation, and environmental variables)
 Identify the principles of DevOps practices
+
+
+Get Cisco to check the spelling on the Quiz , Q6 Stored XSS and Reflected XSS
+
+Which of the following issues can a firewall NOT help solve?

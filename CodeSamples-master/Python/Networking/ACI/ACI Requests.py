@@ -18,8 +18,7 @@ headers = {
     'Content-Type': "application/json"
 }
 
-response = requests.post(url, data=json.dumps(
-    payload), headers=headers, verify=False).json()
+response = requests.post(url, data=json.dumps(payload), headers=headers, verify=False).json()
 
 # print(json.dumps(response, indent=2, sort_keys=True))
 

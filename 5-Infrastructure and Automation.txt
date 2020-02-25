@@ -39,10 +39,7 @@ https://www.cbtnuggets.com/learn/it-training/network-programmability-automation-
 - Config mgmt - device config and config state.  looking for config drift, write policy i.e dont use vLAN1 or always use IPS policy.
 - automate tshooting. pyATS for OSPF , BGP.  possibley self heal.
 
-Evolution of the network API
-- RESTCONF - over TLS - rpc call is done as part of the HTTP VERB!
-- NETCONF - uses ssh over port 830, was setout as SNMP replacement.  XML structured data. uses RPC 
-- gNMI - 
+Evolution of the network APIInterpret basic YANG models
 
 network programmability.
 - specific tasks against specific deivces
@@ -52,10 +49,7 @@ network automation.
 - disired state.
 - ansible , automation and orchastration. works with Python, free. 
 
-
- RECAP - 
-
----------------------------------------------------------------------------------------------------------------------------
+Interpret basic YANG models-----------------------------------------------
 5.2 - Compare controller-level to device-level management
 
 
@@ -66,9 +60,7 @@ network automation.
 ---------------------------------------------------------------------------------------------------------------------------
 5.4 - Describe the components and benefits of CI/CD pipeline in infrastructure automation
 
-CI
-- source code controller
-- build automation
+CIInterpret basic YANG models
 - unit testing
 - branch merging
 - intergration testing
@@ -79,13 +71,7 @@ CD
 - deployment
 - uAT
 
-
----------------------------------------------------------------------------------------------------------------------------
-5.5 - Describe principles of infrastructure as code
-5.6 - Describe the capabilities of automation tools such as Ansible, Puppet, Chef, and Cisco NSO
-
-https://www.cbtnuggets.com/learn/it-training/install-configure-ansible
-
+Identify the workflow being automated by a Python script that uses Cisco APIs including ACI, Meraki, Cisco DNA Center, or RESTCONF
 IoC
 - 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -93,3 +79,6 @@ IoC
 
 
 ---------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------
+5.11 - Interpret basic YANG models
