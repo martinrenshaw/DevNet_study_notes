@@ -158,10 +158,16 @@ Singleton - getInstance() is used to use the single instance. Create a class tha
 
 Observer - subject, notify method, dependent.
 
+The observer design pattern is a subscription notification design that lets objects (observers or subscribers) receive events when there are 
+changes to an object (subject or publisher) they are observing.
+
 MVC -   V - presents data
         M - stores data
         C - handles logic
 
+Model: The model is the application's data structure and is responsible for managing the data, logic and rules of the application. It gets input from the controller.
+View: The view is the visual representation (the presentation) of the data. There can be multiple representations of the same data.
+Controller: The controller is like the middleman between the model and view. It takes in user input and manipulates it to fit the format for the model or view.
 
 ---------------------------------------------------------------------------------------------------------------------------
 1.7 - Explain the advantages of version control

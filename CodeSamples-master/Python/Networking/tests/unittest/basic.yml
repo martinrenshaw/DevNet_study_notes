@@ -1,0 +1,38 @@
+---
+    edit-config:
+      a-boolean: true
+      default-operation: merge
+      more-numbers:
+      - 225.0
+      - -1.0735
+      some-integers:
+      - 2
+      - 3
+      - 5
+      - 7
+      - 9
+      test-operation: set
+...
+
+---
+mymap: { myfirstkey: 5, mysecondkey: The quick brown fox}
+mylist: [1, 2, 3]
+
+mmymap:
+  myfirstkey: 5
+  mysecondkey: The quick brown fox
+
+mmylist:
+- 1
+- 2
+- 3
+
+mylongstring: >
+  This is my long string
+  which will end up with no linebreaks in it
+myotherlongstring: |
+  This is my other long string
+  which will end up with linebreaks as in the original
+
+# mynumericstring: !!str 0.1415
+# yaml 1.2 only
